@@ -8,8 +8,8 @@ from datetime import datetime
 # ==========================================
 # Configuration
 # ==========================================
-INPUT_FILE = "results/endurance-5m.json"
-OUTPUT_FILE = "results/minute-summary.csv"
+INPUT_FILE = "results/endurance-10m.json"
+OUTPUT_FILE = "results/10minute-summary.csv"
 
 # ==========================================
 # Load k6 JSON time-series data
