@@ -1,0 +1,147 @@
+{
+    "metrics": {
+        "vus_max": {
+            "min": 20,
+            "max": 20,
+            "value": 20
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 1.50415,
+            "max": 11.6682,
+            "p(90)": 3.4143600000000034,
+            "p(95)": 4.673199999999998,
+            "avg": 1.831209583333335,
+            "min": 0
+        },
+        "vus": {
+            "value": 20,
+            "min": 20,
+            "max": 20
+        },
+        "http_req_blocked": {
+            "avg": 0.03854474999999998,
+            "min": 0,
+            "med": 0,
+            "max": 3.8867,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_sent": {
+            "count": 264000,
+            "rate": 8757.294382550921
+        },
+        "iterations": {
+            "count": 1200,
+            "rate": 39.80588355704964
+        },
+        "http_req_duration": {
+            "avg": 1.831209583333335,
+            "min": 0,
+            "med": 1.50415,
+            "max": 11.6682,
+            "p(90)": 3.4143600000000034,
+            "p(95)": 4.673199999999998,
+            "thresholds": {
+                "p(95)<500": false
+            }
+        },
+        "iteration_duration": {
+            "avg": 502.34131175000016,
+            "min": 500.0378,
+            "med": 501.93235,
+            "max": 515.7135,
+            "p(90)": 504.00313,
+            "p(95)": 505.706055
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.031194916666666662,
+            "min": 0,
+            "med": 0,
+            "max": 3.8867,
+            "p(90)": 0
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_failed": {
+            "fails": 1200,
+            "passes": 0,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "http_req_receiving": {
+            "med": 0,
+            "max": 1.092,
+            "p(90)": 0.2538100000000018,
+            "p(95)": 0.5235,
+            "avg": 0.06051400000000002,
+            "min": 0
+        },
+        "http_req_sending": {
+            "max": 1.0536,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.007541583333333336,
+            "min": 0,
+            "med": 0
+        },
+        "checks": {
+            "passes": 3600,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_waiting": {
+            "med": 1.3181,
+            "max": 11.6682,
+            "p(90)": 3.2922800000000016,
+            "p(95)": 4.673199999999998,
+            "avg": 1.763154000000001,
+            "min": 0
+        },
+        "http_reqs": {
+            "count": 1200,
+            "rate": 39.80588355704964
+        },
+        "data_received": {
+            "count": 452001,
+            "rate": 14993.582644724995
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "POST returns 201": {
+                    "name": "POST returns 201",
+                    "path": "::POST returns 201",
+                    "id": "85bb921331431f0e266d3bd5d1dc35f3",
+                    "passes": 1200,
+                    "fails": 0
+                },
+                "response contains order ID": {
+                    "id": "99d2dc4bc42ef137a70cca0c927c443d",
+                    "passes": 1200,
+                    "fails": 0,
+                    "name": "response contains order ID",
+                    "path": "::response contains order ID"
+                },
+                "response time below 500ms": {
+                    "id": "6e5e0dec62b4c50d73f333c1077765e6",
+                    "passes": 1200,
+                    "fails": 0,
+                    "name": "response time below 500ms",
+                    "path": "::response time below 500ms"
+                }
+            }
+    }
+}
